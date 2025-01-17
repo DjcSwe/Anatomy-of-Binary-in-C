@@ -35,7 +35,7 @@
 #### Try to locate the functions you wrote in the assembly file and in the disassembled object file and executable. 
 * Assembly: ```cat assembly_example.s```
     * `main`
-        * <img src="Screenshots/assembly/main.png" alt="Alt Text" width="300" height="200">
+        * <img src="Screenshots/assembly/main.png" alt="Alt Text" width="500">
         * ![main_assembly | width=100](Screenshots/assembly/main.png)
     * `say_hello`
         * ![say_hello_assembly | width=100](Screenshots/assembly/say_hello.png)

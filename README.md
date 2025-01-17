@@ -35,31 +35,31 @@
 #### Try to locate the functions you wrote in the assembly file and in the disassembled object file and executable. 
 * Assembly: ```cat assembly_example.s```
     * `main`
-        * ![main_assembly | width=200](Screenshots/assembly/main.png)
+        * ![main_assembly | width=100](Screenshots/assembly/main.png)
     * `say_hello`
-        * ![say_hello_assembly | width=200](Screenshots/assembly/say_hello.png)
+        * ![say_hello_assembly | width=100](Screenshots/assembly/say_hello.png)
     * `add_numbers`
-        * ![add_numbers_assembly | width=200](Screenshots/assembly/add_numbers.png)
+        * ![add_numbers_assembly | width=100](Screenshots/assembly/add_numbers.png)
     * `sub_numbers`
-        * ![sub_numbers_assembly | width=200](Screenshots/assembly/sub_numbers.png)
+        * ![sub_numbers_assembly | width=100](Screenshots/assembly/sub_numbers.png)
 * Object: ```objdump -d object_example.o```
     * `main`
-        * ![main_assembly | width=200](Screenshots/object/main.png)
+        * ![main_assembly | width=100](Screenshots/object/main.png)
     * `say_hello`
-        * ![say_hello_assembly | width=200](Screenshots/object/say_hello.png)
+        * ![say_hello_assembly | width=100](Screenshots/object/say_hello.png)
     * `add_numbers`
-        * ![add_numbers_assembly | width=200](Screenshots/object/add_numbers.png)
+        * ![add_numbers_assembly | width=100](Screenshots/object/add_numbers.png)
     * `sub_numbers`
-        * ![sub_numbers_assembly | width=200](Screenshots/object/sub_numbers.png)
+        * ![sub_numbers_assembly | width=100](Screenshots/object/sub_numbers.png)
 * Executable: ```objdump -d executable_example```
     * `main`
-        * ![main_assembly | width=200](Screenshots/executable/main.png)
+        * ![main_assembly | width=100](Screenshots/executable/main.png)
     * `say_hello`
-        * ![say_hello_assembly | width=200](Screenshots/executable/say_hello.png)
+        * ![say_hello_assembly | width=100](Screenshots/executable/say_hello.png)
     * `add_numbers`
-        * ![add_numbers_assembly | width=200](Screenshots/executable/add_numbers.png)
+        * ![add_numbers_assembly | width=100](Screenshots/executable/add_numbers.png)
     * `sub_numbers`
-        * ![sub_numbers_assembly | width=200](Screenshots/executable/sub_numbers.png)
+        * ![sub_numbers_assembly | width=100](Screenshots/executable/sub_numbers.png)
 
 #### Can you see the correspondence between the C code and the assembly code?
 * The assembly code and C code were similar in function structure. There was a function name definition, along with the coresponding implementation indented below it, to define the method's functionality. The C program was more easily redable than the assembly program.
@@ -69,13 +69,13 @@
 * `strip executable_example`
 * `objdump -d executable_example`
     * `main`
-        * ![main_assembly | width=200](Screenshots/stripped/main.png)
+        * ![main_assembly | width=100](Screenshots/stripped/main.png)
     * `say_hello`
-        * ![say_hello_assembly | width=200](Screenshots/stripped/say_hello.png)
+        * ![say_hello_assembly | width=100](Screenshots/stripped/say_hello.png)
     * `add_numbers`
-        * ![add_numbers_assembly | width=200](Screenshots/stripped/add_numbers.png)
+        * ![add_numbers_assembly | width=100](Screenshots/stripped/add_numbers.png)
     * `sub_numbers`
-        * ![sub_numbers_assembly | width=200](Screenshots/stripped/sub_numbers.png)
+        * ![sub_numbers_assembly | width=100](Screenshots/stripped/sub_numbers.png)
 * In the unstripped files, we can map the function names from the orginal C program to the labels in the assembly. After stripping, the correspondence is lost becuase the symbol names are removed. This leaves just memory addresses and machine instruction sets left to understand and trace functionality. 
 
 
